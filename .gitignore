@@ -1,4 +1,4 @@
-polito-*
+/polito-*
 target
 openapi.yaml
 *.pkg.tar.zst
