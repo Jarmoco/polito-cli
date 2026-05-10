@@ -2,5 +2,5 @@
 	path = ./rcc-scripts
 	url = git@github.com:Jarmoco/polito-cli.git
 [submodule "homebrew-polito-cli"]
-	path = homebrew-polito-cli
+	path = ./homebrew-polito-cli
 	url = git@github.com:Jarmoco/homebrew-polito-cli.git
