@@ -1,0 +1,11 @@
+[package]
+name = "polito"
+version = "0.1.0"
+edition = "2021"
+description = "CLI tool for PoliTo students to fetch course materials"
+
+[[bin]]
+name = "polito"
+path = "src/main.rs"
+
+[dependencies]

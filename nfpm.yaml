@@ -1,0 +1,17 @@
+# Documentation at https://nfpm.goreleaser.com
+name: "polito-cli"
+arch: "amd64"
+platform: "linux"
+version: "0.1.0"
+section: "default"
+priority: "extra"
+depends:
+maintainer: "Jarmoco"
+description: |
+  PolitoCLI is a terminal interface for Polito's learning platform.
+vendor: "Jarmoco"
+homepage: "https://github.com/Jarmoco/polito-cli"
+license: "MIT"
+contents:
+  - src: ./target/release/polito
+    dst: /usr/bin/polito

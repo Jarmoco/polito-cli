@@ -1,0 +1,7 @@
+polito-*
+target
+openapi.yaml
+*.pkg.tar.zst
+*.tar.gz
+*.exe
+dist/
