@@ -18,14 +18,16 @@ const USERNAME_FILE: &str = ".user";
 /* --- Paths ---------------------------------------------------------------- */
 
 fn config_dir() -> PathBuf {
-    env::var("XDG_CONFIG_HOME")
-        .map(PathBuf::from)
-        .unwrap_or_else(|_| {
-            env::var("HOME")
-                .map(|h| PathBuf::from(h).join(".config"))
-                .unwrap_or_default()
-        })
-        .join("polito-cli")
+    if cfg!(target_os = "windows") {
+        env::var("APPDATA")
+            .map(PathBuf::from)
+            .unwrap_or_default()
+    } else {
+        env::var("HOME")
+            .map(|h| PathBuf::from(h).join(".config"))
+            .unwrap_or_default()
+    }
+    .join("polito-cli")
 }
 
 fn token_path() -> PathBuf {
