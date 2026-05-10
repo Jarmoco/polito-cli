@@ -32,6 +32,12 @@ Testing again a mock api is also supported, check the [USAGE.md](USAGE.md#testin
 
 ## Building
 
+Ensure you have fetched submodules first:
+```bash
+git submodule update --init --recursive
+```
+
+
 All build dependencies will be automatically installed (and then uninstalled) by the build script, just run:
 
 ```bash
