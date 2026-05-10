@@ -5,8 +5,22 @@ Zero external crate dependencies.
 
 You can find the openapi spec [here](https://github.com/polito/api-spec/blob/master/dist/clients/student/openapi.yaml).
 
+## Installation
+
+You can manually install from [releases](https://github.com/Jarmoco/polito-cli/releases) or use [Homebrew](https://brew.sh/) (Linux and MacOS only):
+
+```bash
+brew tap Jarmoco/polito-cli
+brew install polito-cli
+```
+
+One-liner:
+
+```bash
+brew install jarmoco/polito-cli/polito-cli
+```
+
 ## Quick start
-Get the binary from the releases page or build it yourself, then run:
 
 ```bash
 polito login
