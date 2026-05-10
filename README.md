@@ -29,17 +29,10 @@ polito          # interactive TUI
 ```
 Testing again a mock api is also supported, check the [USAGE.md](USAGE.md#testing-with-mock-server) mock testing section for more information.
 
+
 ## Building
 
-### Prerequisites
-
-- **cargo** and **nfpm** — required for all builds
-- **zig** + **cargo-zigbuild** + `aarch64-apple-darwin` rustup target — to cross-compile for macOS (Apple Silicon)
-- **mingw-w64** + `x86_64-pc-windows-gnu` rustup target — to cross-compile for Windows
-
-On Arch Linux the build script can install the build dependencies automatically.
-
-### Build
+All build dependencies will be automatically installed (and then uninstalled) by the build script, just run:
 
 ```bash
 ./rcc-scripts/build.sh
@@ -49,7 +42,6 @@ More info about rcc-scripts [here](https://github.com/Jarmoco/rcc-scripts).
 
 Packages will be available in the `dist/` directory.
 
-See `./rcc-scripts/build.sh --help` for target selection and other options.
 
 ## Architecture
 A high-level overview of the architecture:
@@ -189,8 +181,3 @@ src/
 | `polito <command> --json` | CLI | One-shot command, JSON output |
 
 See [USAGE.md](USAGE.md) for full command reference, TUI key bindings, configuration, and testing guide.
-
-## Exit Codes
-
-- `0` — success
-- `1` — error (network, auth, parse, config, or clone conflicts)
